@@ -3,7 +3,7 @@ BIG DATA AND DATA MINING (ST168)
 
 Prediksi Obesitas Menggunakan Metode Random Forest dan XGBClassifier
 
-![1.png](1.png)
+![logo](./Gambar/1.png)
 
 
 
