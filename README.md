@@ -3,18 +3,7 @@ BIG DATA AND DATA MINING (ST168)
 
 Prediksi Obesitas Menggunakan Metode Random Forest dan XGBClassifier
 
-![logo](./Gambar/1.png)
-
-
-
-
-
-
-
-
-
-
-
+![logo](1.png)
 
 
 Disusun oleh
@@ -40,14 +29,17 @@ Dataset di penelitian ini mencakup informasi tentang demografi, kebiasaan makan,
 
 dataset ini diambil dari kaagle https://drive.google.com/file/d/1nOZDTX3ddB_dEl8dBZbsKlVtOkxv64Fc/view?usp=drive_link
 
-3.	DATA PREPROCESSING 
- 
+3.	DATA PREPROCESSING
+   
+ ![gambar2](2.jpg)
 
 Karena tidak ada nilai kosong dalam dataset, tidak diperlukan langkah imputasi.
 
- 
+ ![gambar3](3.png)
 
 Fitur kategorikal seperti Gender dan MTRANS dikonversi menggunakan one-hot encoding agar dapat direpresentasikan dalam format numerik yang dapat dipahami oleh model. Selain itu, target variabel Obesity diubah menjadi representasi numerik menggunakan label encoding untuk memastikan model dapat memprosesnya dengan baik.
+
+![gambar5](5.png)
    
 Variabel numerik seperti Height dan Weight dinormalisasi menggunakan Min-Max Scaling untuk memastikan setiap fitur memiliki skala yang sebanding. Data dibagi menjadi set pelatihan dan pengujian dengan rasio 80:20 untuk melatih dan mengevaluasi model.	
 
@@ -57,7 +49,7 @@ XGBoost Classifier dipilih karena efisiensinya dalam menangani dataset yang komp
 
 4.	EXPLORATORY DATA ANALYSIS 
 
- 
+ ![Gambar11](11.png)
  
   
 
@@ -69,17 +61,19 @@ Hasil dari analisis eksplorasi data menunjukkan adanya korelasi yang kuat antara
 
 5.	SELEKSI FITUR 
  
+![Gambar12](12.png)
 
 Pada Gambar diatas adalah untuk memastikan tidak ada data yang berulang, yang dapat menyebabkan bias dalam analisis. 
 
- 
+![Gambar13](13.png) 
 
 Pada Gambar tersebut adalah untuk menghapus kolom-kolom yang didasarkan pada korelasi tinggi dengan target atau tidak relevan. 
 
- 
+ ![Gambar14](14.png)
 
 One-hot encoding adalah langkah standar untuk menangani variabel kategorikal. Namun, memutuskan untuk menggunakan drop_first=True mengurangi multikolinearitas, tetapi penting untuk memastikan bahwa informasi yang dibuang tidak relevan untuk model.
 
+![Gambar15](15.png)
  
 Pada Gambar diatas untuk memisahkan fitur (independen) dari target (dependen) adalah langkah penting dalam pipeline machine learning. 
 
@@ -87,20 +81,19 @@ Disini menggunakan metode RFE atau feature importance karena efektif untuk data 
 
 6.	MODELING 
  
- 
+ ![Gambar16](16.png) ![Gambar17](17.png) ![Gambar18](18.png)
  
 Link GitHub		: https://github.com/HamzahShafa5317/BDDM.git
 Link Launchinpad	: https://launchinpad.com/project/prediksi-diabetes-menggunakan-random-forest-dan-xgbclassifier-f53cc34
 Link ipynb		: https://colab.research.google.com/drive/1gehtPy3SQifDwDm_WwdvWTtKtS5oaX9D?authuser=0#scrollTo=sxd3XMCIam1N
+
 7.	EVALUASI MODEL (10 point)
+  
 Random Forest
- 
+   ![Gambar19](19.png) ![Gambar20](20.png) ![Gambar21](21.png) 
    
-
-
-
 XGBClassifier
- 
+    ![Gambar22](22.png) ![Gambar23](23.png) ![Gambar24](24.png)
    
 
 8.	ANALISA DAN PEMBAHASAN (15 point)
